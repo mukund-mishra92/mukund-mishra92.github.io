@@ -10,12 +10,12 @@
       font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      background-color: #f4f7f9;
       color: #333;
       scroll-behavior: smooth;
     }
     header {
-      background-color: #1e2a38;
+      background: linear-gradient(90deg, #1e2a38, #2e3b4f);
       color: white;
       padding: 2rem;
       text-align: center;
@@ -28,11 +28,15 @@
     }
     nav a {
       margin: 0 1rem;
-      color: #ffd700;
+      color: #f9d342;
       font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffffff;
     }
     main {
-      max-width: 900px;
+      max-width: 950px;
       margin: 2rem auto;
       padding: 0 1.5rem;
     }
@@ -48,19 +52,19 @@
     }
     .section {
       background: white;
-      padding: 1.5rem;
+      padding: 2rem;
       margin-bottom: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
     ul {
-      padding-left: 1.2rem;
+      padding-left: 1.5rem;
     }
     li {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.6rem;
     }
     .project, .job {
-      margin-bottom: 1rem;
+      margin-bottom: 1.2rem;
     }
     .scroll-top {
       position: fixed;
@@ -69,14 +73,28 @@
       background-color: #1e2a38;
       color: white;
       border: none;
-      padding: 10px 15px;
+      padding: 12px 16px;
       border-radius: 50%;
       font-size: 18px;
       cursor: pointer;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
     }
     .scroll-top:hover {
       background-color: #0077cc;
+    }
+    #skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      list-style: none;
+      padding: 0;
+    }
+    #skills li {
+      background-color: #0077cc;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 0.95rem;
     }
   </style>
 </head>
@@ -106,14 +124,24 @@
     <div class="section" id="skills">
       <h2>Skills</h2>
       <ul>
-        <li>Artificial Intelligence, Deep Learning, GenAI</li>
-        <li>Computer Vision, OCR, Time Series Modeling</li>
-        <li>Python, Data Structures & Algorithms</li>
-        <li>Graph Analytics, GNNs</li>
-        <li>Cloud: AWS, Azure</li>
-        <li>Project Leadership & Team Management</li>
+        <li>Artificial Intelligence</li>
+        <li>Deep Learning</li>
+        <li>GenAI</li>
+        <li>Computer Vision</li>
+        <li>OCR</li>
+        <li>Time Series Modeling</li>
+        <li>Python</li>
+        <li>Data Structures & Algorithms</li>
+        <li>Graph Analytics</li>
+        <li>GNNs</li>
+        <li>AWS</li>
+        <li>Azure</li>
+        <li>Team Leadership</li>
+        <li>Project Management</li>
       </ul>
     </div>
+
+    <!-- rest of your content remains unchanged -->
 
     <div class="section" id="experience">
       <h2>Experience</h2>
@@ -141,6 +169,8 @@
         </ul>
       </div>
     </div>
+
+    <!-- rest remains unchanged -->
 
     <div class="section" id="projects">
       <h2>Projects</h2>
